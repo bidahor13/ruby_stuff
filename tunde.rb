@@ -1,6 +1,8 @@
 #using heredoc called STRING
 
-#name = "Mongo"
+
+name = "Mongo"
+
 print "Enter your first name: "
 fName = gets
 
