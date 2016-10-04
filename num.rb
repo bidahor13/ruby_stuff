@@ -11,6 +11,6 @@ month = gets.chomp
 #currDate = gets.to_i
 
 #dateOfbirth = currDate - age
-dateOfbirth = 2016
+curreDateOfTheYear = 2016
 
 puts " #{name} was born on the #{month} of #{dateOfbirth - age}"
