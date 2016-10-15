@@ -59,6 +59,30 @@ else
 	May be next time :( "
 end
 
+puts "------------------PHASE 5 ------------------------------"
+puts "Enter a word to replace the keyword 'QUICK'
+  The quick brown fox jumped over the quick dog  "
+wordRep = gets.chomp.downcase
+
+str = "The quick brown fox jumped over the quick dog"
+p str.sub "quick", "#{wordRep}"
+
+puts "Awesome! you are doing well!"
+
+puts "------------------PHASE 6 ------------------------------"
+#p str.strip
+#p str.split
+
+puts "Write a complete paragraph of your choice"
+phrase = gets.chomp.downcase
+numOfWords = phrase.size
+#p phrase.strip
+
+puts "Let count how many words exist in your phrase"
+p phrase.split  
+puts "there are #{numOfWords} "
+
+
 
 
 #10.times do 
