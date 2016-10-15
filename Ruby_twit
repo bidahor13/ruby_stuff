@@ -1,7 +1,9 @@
-class MyClass
-	@@teams = ["A", "Tigers"]
-end
+#class MyClass
+#	@@teams = ["A", "Tigers"]
+#end
 
+puts "Lets play a Weird Game 
+--------------------- PHASE 1 -----------------------------------"
 
 puts "What is your First Name"
 fname = gets.chomp
@@ -10,7 +12,7 @@ puts "What is your Last Name"
 lname = gets.chomp
 
 
-#---------------------------------------------------#
+puts "--------------------- PHASE 2------------------------------" 
 puts "Enter two number that sum up your age:"
 p "First number"
 a = gets.chomp.to_i
@@ -18,32 +20,44 @@ a = gets.chomp.to_i
 p "second number"
 b = gets.chomp.to_i
 
+puts "--------------------------------------------------------"
 
 #puts "#{2+2}"
-#---------------------------------------------------#
-
 # using a constant 
-TITLE= "Engineer"
-
 #local variable 
 #@location = "NW"
 
-
+TITLE= "Engineer"
 puts "Good-morning!!
 #{TITLE} #{fname} #{lname} welcome to Twitter!! "
 puts "I guess your Age is => #{a+b} based on your input"
 
-puts "-------------------------------------------------"
+puts "------------------- PHASE 3------------------------------"
 
 puts "Enter YES or NO if I got it right"
-ans = gets.chomp
+ans = gets.chomp.upcase
 if ans == "YES" 
-	puts "Yay! I'm just too cool"
+	puts "Yay! I'm just too cool".reverse
 elsif 
-   ans == "NO"
-   puts "bummer!! I though I was that good"
+   ans == "NO".upcase
+   puts "bummer!! I thought I was that good".reverse.upcase
 end	
 
+puts "------------------PHASE 4-------------------------------"
+puts "Oops!! Can you guess the above output"
+guess = gets.chomp
+
+puts "--------------------------------------------------------"
+
+if guess == "Yay! I'm just too cool"
+	puts "You are right!! Good job :) "
+	
+elsif guess == "bummer!! I though I was that good"
+	puts "You are right!! Good job :) "
+else 
+	puts "Hmmm! I don't think so
+	May be next time :( "
+end
 
 
 
@@ -51,3 +65,7 @@ end
 #	$x = "tunde"
 #end	
 #p $x
+
+
+
+
