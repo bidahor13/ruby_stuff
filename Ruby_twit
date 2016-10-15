@@ -1,0 +1,53 @@
+class MyClass
+	@@teams = ["A", "Tigers"]
+end
+
+
+puts "What is your First Name"
+fname = gets.chomp
+
+puts "What is your Last Name"
+lname = gets.chomp
+
+
+#---------------------------------------------------#
+puts "Enter two number that sum up your age:"
+p "First number"
+a = gets.chomp.to_i
+
+p "second number"
+b = gets.chomp.to_i
+
+
+#puts "#{2+2}"
+#---------------------------------------------------#
+
+# using a constant 
+TITLE= "Engineer"
+
+#local variable 
+#@location = "NW"
+
+
+puts "Good-morning!!
+#{TITLE} #{fname} #{lname} welcome to Twitter!! "
+puts "I guess your Age is => #{a+b} based on your input"
+
+puts "-------------------------------------------------"
+
+puts "Enter YES or NO if I got it right"
+ans = gets.chomp
+if ans == "YES" 
+	puts "Yay! I'm just too cool"
+elsif 
+   ans == "NO"
+   puts "bummer!! I though I was that good"
+end	
+
+
+
+
+#10.times do 
+#	$x = "tunde"
+#end	
+#p $x
