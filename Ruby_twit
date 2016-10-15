@@ -11,6 +11,15 @@ fname = gets.chomp
 puts "What is your Last Name"
 lname = gets.chomp
 
+fullNames = fname + lname
+
+
+puts "----Lets see how many letters make up your full name ---"
+p fullNames.split(//)
+numOfLetter = fullNames.size 
+p "We have #{numOfLetter} letters in the list"
+
+
 
 puts "--------------------- PHASE 2------------------------------" 
 puts "Enter two number that sum up your age:"
@@ -20,19 +29,26 @@ a = gets.chomp.to_i
 p "second number"
 b = gets.chomp.to_i
 
-puts "--------------------------------------------------------"
+puts "-----------------------------------------------------------"
 
 #puts "#{2+2}"
 # using a constant 
 #local variable 
 #@location = "NW"
 
+
 TITLE= "Engineer"
 puts "Good-morning!!
 #{TITLE} #{fname} #{lname} welcome to Twitter!! "
 puts "I guess your Age is => #{a+b} based on your input"
 
-puts "------------------- PHASE 3------------------------------"
+puts "------------------- split your name -----------------------"
+
+p fullNames.split(//)
+p fullNames.split.size 
+
+
+puts "------------------- PHASE 3-------------------------------"
 
 puts "Enter YES or NO if I got it right"
 ans = gets.chomp.upcase
@@ -43,11 +59,13 @@ elsif
    puts "bummer!! I thought I was that good".reverse.upcase
 end	
 
-puts "------------------PHASE 4-------------------------------"
+
+
+puts "------------------PHASE 4--------------------------------"
 puts "Oops!! Can you guess the above output"
 guess = gets.chomp
 
-puts "--------------------------------------------------------"
+puts "---------------------------------------------------------"
 
 if guess == "Yay! I'm just too cool"
 	puts "You are right!! Good job :) "
@@ -59,6 +77,8 @@ else
 	May be next time :( "
 end
 
+
+
 puts "------------------PHASE 5 ------------------------------"
 puts "Enter a word to replace the keyword 'QUICK'
   The quick brown fox jumped over the quick dog  "
@@ -68,6 +88,8 @@ str = "The quick brown fox jumped over the quick dog"
 p str.sub "quick", "#{wordRep}"
 
 puts "Awesome! you are doing well!"
+
+
 
 puts "------------------PHASE 6 ------------------------------"
 #p str.strip
@@ -81,6 +103,7 @@ numOfWords = phrase.size
 puts "Let count how many words exist in your phrase"
 p phrase.split  
 puts "there are #{numOfWords} "
+
 
 
 
